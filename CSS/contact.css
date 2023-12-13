@@ -1,0 +1,111 @@
+/********************************/
+/*      Mise en page            */
+/*         body                 */
+/********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+/* Fin de mise en page body */
+
+/********************************/
+/*      Mise en page            */
+/*      main container form     */
+/********************************/
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+main h1 {
+    color: #007BFF;
+}
+.container {
+    margin: 105px auto;
+    padding: 20px;
+    width: 70vh;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*champs du formulaire */
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* bouton d'envoi */
+button[name="envoie"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Fin de mise en page main container form */
+
+
+/********************************/
+/*      Mise en page            */
+/*      Footer                  */
+/********************************/
+
+
+#ft1 {
+    background-color: #57cc99;
+    color: white;
+    padding: 20px;
+    /*margin-top: 10px;*/
+    margin: auto;
+    padding: auto;/*text-align: center;*/
+    
+}
+
+#ft1 p {
+    font-size: 12pt;
+    text-align: center;
+}
+/* Fin de mise en page Footer */
+
+
+/* Pour les écrans de largeur inférieure à 768px */
+@media (max-width: 768px) {
+    main {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 90%; /* Réduction de la largeur du conteneur pour s'adapter aux petits écrans */
+    }
+  
+    input[type="email"],
+    textarea {
+      width: 100%; /* Ajustement la largeur des champs de texte pour remplir la largeur de l'écran */
+    }
+  
+    button[name="envoie"] {
+      width: 100%; /* Ajustement la largeur du bouton "J'envoie !" */
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/********************************/
+/*      Mise en page            */
+/*         body                 */
+/********************************/
+
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    /*text-align: center;*/
+    margin: 0;
+    padding: 0;
+}
+
+ /* Fin de mise en page body */
+
+
+/********************************/
+/*      Mise en page            */
+/*      main container form     */
+/********************************/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/*.main {
+    /*max-height: 90vh;*/
+   /* overflow: auto; /*  
+}*/
+
+.login-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: white;
+}
+
+
+/* Fin de mise en page main container form */
+
+
+
+/********************************/
+/*      Mise en page            */
+/*      Footer                  */
+/********************************/
+
+#ft1 {
+    background-color: #57cc99;
+    color: white;
+    padding: 20px;
+    /*margin-top: 10px;*/
+    /*margin: auto;*/
+    padding: auto;/*text-align: center;*/
+}
+
+#ft1 p {
+    font-size: 12pt;
+    text-align: center;  
+}
+
+/* Fin de mise en page Footer */
+
+/* Pour les écrans de largeur inférieure à 768px */
+@media (max-width: 768px) {
+    .container {
+      height: auto; /* Ajustement de la hauteur de votre container */
+    }
+  
+    .login-form {
+      max-width: 90%; /* Réduction de la largeur du formulaire pour s'adapter à de petits écrans */
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      width: 100%; /* Ajustement la largeur des champs de texte pour remplir la largeur de l'écran */
+    }
+  
+    input[type="submit"] {
+      width: 100%; /* Ajustement la largeur du bouton "Se connecter" */
+    }
+  }
+  
+
+
+/*footer{
+    
+    margin-top: 20px;
+}*/
