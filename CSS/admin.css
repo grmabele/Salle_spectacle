@@ -1,0 +1,137 @@
+/********************************/
+/*      Mise en page            */
+/*         body                 */
+/********************************/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Fin de mise en page body */
+
+/********************************/
+/*      Mise en page            */
+/*    conteneur principal       */
+/********************************/
+
+main {
+  background-color: #ffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #007BFF;
+}
+
+/*boutons*/
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin: 10px; 
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* survol des boutons */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Fin de mise en page conteneur principal */
+
+
+/********************************/
+/*      Mise en page            */
+/*      Footer                  */
+/********************************/
+
+#ft1 {
+  background-color: #57cc99;
+  color: white;
+  padding: 20px;
+  /*margin-top: 10px;*/
+  margin: auto;
+  padding: auto;/*text-align: center;*/
+}
+
+#ft1 p {
+  font-size: 12pt;
+  text-align: center;
+  color: white;
+}
+
+/* Fin de mise en page Footer */
+
+
+/* Pour les écrans de largeur inférieure à 768px */
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button {
+    margin: 5px; /* Réduction de la marge entre les boutons */
+  }
+
+  input[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Réduction de la marge autour du bouton "Se déconnecter" */
+input[type="submit"][name="deconnect"] {
+  margin: 10px;
+}
+
+
+
+
+/*footer{
+  
+  margin-top: 20px;
+}*/
+/*
+html{
+  font-size: 62.5%;
+}*/

@@ -1,0 +1,184 @@
+  /********************************/
+  /*      Mise en page            */
+  /*         body                 */
+  /********************************/
+ 
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html{
+  font-size: 62.5%;
+  }
+
+  body {
+    font-family: Verdana; font-size: 12pt;
+    /*height: 100vh;*/
+    font-family: sans-serif;
+    background: #d9d9d9;
+    /*padding: clamp(20px, 5vw, 50px) 20px 10px;*/
+  }
+  /* Fin de mise en page body */
+
+
+  /********************************/
+  /*      Mise en page            */
+  /*         titre h1             */
+  /********************************/
+  /*main{
+    height: 80vh;
+  }*/
+  main h1{
+    color: #007BFF;
+  }
+  .h1 {
+    
+    text-align: center;
+    color: #007BFF; 
+  }
+  /* Fin de mise en page h1 */
+
+  /********************************/
+  /*      Mise en page input      */
+  /*     label et select          */
+  /********************************/
+
+  .question > div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .input span{font-size: 18px;}
+
+  .appt {
+    display: inline-block;
+    width: 300px;
+  }
+
+  input[type="time"],
+  input[type="date"],
+  input[type="text"]{
+    width: 300px;
+    height: 25px;
+  }
+
+  select{
+    width: 300px;
+    height: 25px;
+  }
+  /* Fin de mise en page input, label et select */
+
+
+  /********************************/
+  /*      Mise en page            */
+  /* Formulaire input textarea    */
+  /********************************/
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .question {
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 5px;
+    /*background: #d9ebed;*/
+    background: #007BFF;
+    box-shadow: 0 5px 10px rgba(104, 104, 104, 0.5);
+  }
+  .question h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  textarea {
+    width: 300px;
+    height: 150px;
+  }
+  /* Fin de mise en page Formulaire input textarea */
+
+
+  /********************************/
+  /*      Mise en page            */
+  /*        button                */
+  /********************************/
+
+  form button {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: #fff;
+    min-width: 200px;
+    padding: 15px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  form button:hover {
+    background:  #007BFF;
+  }
+  /* Fin de mise en page bouton */
+
+  
+/********************************/
+/*      Mise en page            */
+/*      Footer                  */
+/********************************/
+
+#ft1 {
+    background-color: #57cc99;
+    color: white;
+    padding: 40px;
+    /*margin-top: 10px;*/
+    /*margin: auto;*/
+    padding: auto;/*text-align: center;*/
+    
+}
+
+#ft1 p {
+    font-size: 12pt;
+    text-align: center;
+}
+
+/* Fin de mise en page Footer */
+
+/* Pour les écrans de largeur inférieure à 768px */
+@media (max-width: 768px) {
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .container {
+    width: 90%; /* Réduisez la largeur du conteneur pour s'adapter aux petits écrans */
+    margin: 0 auto; /* Centrez le conteneur */
+    padding: 10px;
+  }
+
+  .question > div {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .appt {
+    width: 100%; /* Ajustez la largeur des libellés */
+  }
+
+  input[type="time"],
+  input[type="date"],
+  input[type="text"],
+  select {
+    width: 100%; /* Ajustez la largeur des champs de saisie et des sélecteurs */
+  }
+
+  button[name="envoie"] {
+    width: 100%; /* Ajustez la largeur du bouton "J'envoie !" */
+  }
+}
+
+
